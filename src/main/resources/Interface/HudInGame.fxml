@@ -121,9 +121,9 @@
             </BorderPane>
             <BorderPane>
                <center>
-                  <StackPane id="nerd" fx:id="btnJock1" prefHeight="64.0" prefWidth="64.0" styleClass="icon" BorderPane.alignment="CENTER">
+                  <StackPane id="nerd" fx:id="btnNerd" prefHeight="64.0" prefWidth="64.0" styleClass="icon" BorderPane.alignment="CENTER">
                      <children>
-                        <Label fx:id="restJock1" alignment="BOTTOM_LEFT" styleClass="rest" text="00" textAlignment="RIGHT" StackPane.alignment="BOTTOM_RIGHT" />
+                        <Label fx:id="restNerd" alignment="BOTTOM_LEFT" styleClass="rest" text="00" textAlignment="RIGHT" StackPane.alignment="BOTTOM_RIGHT" />
                      </children>
                   </StackPane>
                </center>
