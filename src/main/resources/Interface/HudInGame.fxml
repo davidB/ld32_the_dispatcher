@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="hudInGame" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox id="restBullet" alignment="TOP_CENTER" layoutY="642.0" maxWidth="1.7976931348623157E308" spacing="30.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="642.0">
+         <children>
+            <StackPane fx:id="btnDumbbell" prefHeight="64.0" prefWidth="64.0">
+               <children>
+                  <Label fx:id="restDumbbell" alignment="BOTTOM_LEFT" styleClass="rest" text="00" textAlignment="RIGHT" StackPane.alignment="BOTTOM_RIGHT" />
+                  <Label fx:id="touchDumbbell" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" styleClass="touch" text="1" StackPane.alignment="TOP_CENTER">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets top="-20.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="icon" />
+                  <String fx:value="dumbbell" />
+               </styleClass>
+            </StackPane>
+            <StackPane fx:id="btnBook" prefHeight="64.0" prefWidth="64.0">
+               <children>
+                  <Label fx:id="restBook" alignment="BOTTOM_LEFT" styleClass="rest" text="00" textAlignment="RIGHT" StackPane.alignment="BOTTOM_RIGHT" />
+                  <Label fx:id="touchBook" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" styleClass="touch" text="2" StackPane.alignment="TOP_CENTER">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets top="-20.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="icon" />
+                  <String fx:value="book" />
+               </styleClass>
+            </StackPane>
+            <StackPane fx:id="btnCandy" prefHeight="64.0" prefWidth="64.0">
+               <children>
+                  <Label fx:id="restCandy" alignment="BOTTOM_LEFT" styleClass="rest" text="00" textAlignment="RIGHT" StackPane.alignment="BOTTOM_RIGHT" />
+                  <Label fx:id="touchCandy" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" styleClass="touch" text="3" StackPane.alignment="TOP_CENTER">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets top="-20.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="icon" />
+                  <String fx:value="candy" />
+               </styleClass>
+            </StackPane>
+            <StackPane id="carrot" fx:id="btnCarrot" prefHeight="64.0" prefWidth="64.0">
+               <children>
+                  <Label fx:id="restCarrot" alignment="BOTTOM_LEFT" styleClass="rest" text="00" textAlignment="RIGHT" StackPane.alignment="BOTTOM_RIGHT" />
+                  <Label fx:id="touchCarrot" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" styleClass="touch" text="4" StackPane.alignment="TOP_CENTER">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets top="-20.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="icon" />
+                  <String fx:value="carrot" />
+               </styleClass>
+            </StackPane>
+         </children>
+      </HBox>
+      <Label fx:id="score" focusTraversable="false" layoutX="1147.0" styleClass="score" text="000" AnchorPane.rightAnchor="8.0" />
+      <Label fx:id="notification" alignment="CENTER" contentDisplay="CENTER" layoutX="468.0" layoutY="113.0" styleClass="notification" text="00 x 00" textAlignment="CENTER" AnchorPane.leftAnchor="468.0" AnchorPane.rightAnchor="468.0" AnchorPane.topAnchor="113.0" />
+      <HBox id="restBullet" alignment="TOP_CENTER" layoutX="467.0" layoutY="7.0" maxWidth="1.7976931348623157E308" spacing="30.0" AnchorPane.leftAnchor="467.0" AnchorPane.rightAnchor="467.0" AnchorPane.topAnchor="7.0">
+         <children>
+            <BorderPane>
+               <center>
+                  <StackPane id="jock" fx:id="btnJock" prefHeight="64.0" prefWidth="64.0" styleClass="icon" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label fx:id="restJock" alignment="BOTTOM_LEFT" styleClass="rest" text="00" textAlignment="RIGHT" StackPane.alignment="BOTTOM_RIGHT" />
+                     </children>
+                  </StackPane>
+               </center>
+               <top>
+                  <HBox BorderPane.alignment="CENTER">
+                     <children>
+                        <StackPane prefHeight="20.0" prefWidth="20.0">
+                           <styleClass>
+                              <String fx:value="microIcon" />
+                              <String fx:value="book" />
+                           </styleClass>
+                        </StackPane>
+                        <StackPane prefHeight="20.0" prefWidth="20.0">
+                           <styleClass>
+                              <String fx:value="microIcon" />
+                              <String fx:value="carrot" />
+                           </styleClass>
+                        </StackPane>
+                        <StackPane prefHeight="20.0" prefWidth="20.0">
+                           <styleClass>
+                              <String fx:value="microIcon" />
+                              <String fx:value="dumbbell" />
+                           </styleClass>
+                        </StackPane>
+                     </children>
+                  </HBox>
+               </top>
+            </BorderPane>
+            <BorderPane>
+               <center>
+                  <StackPane id="nerd" fx:id="btnJock1" prefHeight="64.0" prefWidth="64.0" styleClass="icon" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label fx:id="restJock1" alignment="BOTTOM_LEFT" styleClass="rest" text="00" textAlignment="RIGHT" StackPane.alignment="BOTTOM_RIGHT" />
+                     </children>
+                  </StackPane>
+               </center>
+               <top>
+                  <HBox BorderPane.alignment="CENTER">
+                     <children>
+                        <StackPane prefHeight="20.0" prefWidth="20.0">
+                           <styleClass>
+                              <String fx:value="microIcon" />
+                              <String fx:value="candy" />
+                           </styleClass>
+                        </StackPane>
+                        <StackPane prefHeight="20.0" prefWidth="20.0">
+                           <styleClass>
+                              <String fx:value="microIcon" />
+                              <String fx:value="carrot" />
+                           </styleClass>
+                        </StackPane>
+                        <StackPane prefHeight="20.0" prefWidth="20.0">
+                           <styleClass>
+                              <String fx:value="microIcon" />
+                              <String fx:value="book" />
+                           </styleClass>
+                        </StackPane>
+                     </children>
+                  </HBox>
+               </top>
+            </BorderPane>
+            <BorderPane>
+               <center>
+                  <StackPane id="kid" fx:id="btnKid" prefHeight="64.0" prefWidth="64.0" styleClass="icon" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label fx:id="restKid" alignment="BOTTOM_LEFT" styleClass="rest" text="00" textAlignment="RIGHT" StackPane.alignment="BOTTOM_RIGHT" />
+                     </children>
+                  </StackPane>
+               </center>
+               <top>
+                  <HBox BorderPane.alignment="CENTER">
+                     <children>
+                        <StackPane prefHeight="20.0" prefWidth="20.0">
+                           <styleClass>
+                              <String fx:value="microIcon" />
+                              <String fx:value="carrot" />
+                           </styleClass>
+                        </StackPane>
+                        <StackPane prefHeight="20.0" prefWidth="20.0">
+                           <styleClass>
+                              <String fx:value="microIcon" />
+                              <String fx:value="book" />
+                           </styleClass>
+                        </StackPane>
+                        <StackPane prefHeight="20.0" prefWidth="20.0">
+                           <styleClass>
+                              <String fx:value="microIcon" />
+                              <String fx:value="candy" />
+                           </styleClass>
+                        </StackPane>
+                     </children>
+                  </HBox>
+               </top>
+            </BorderPane>
+            <BorderPane>
+               <center>
+                  <StackPane id="rabbit" fx:id="btnRabbit" prefHeight="64.0" prefWidth="64.0" styleClass="icon" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label fx:id="restRabbit" alignment="BOTTOM_LEFT" styleClass="rest" text="00" textAlignment="RIGHT" StackPane.alignment="BOTTOM_RIGHT" />
+                     </children>
+                  </StackPane>
+               </center>
+               <top>
+                  <HBox BorderPane.alignment="CENTER">
+                     <children>
+                        <StackPane prefHeight="20.0" prefWidth="20.0">
+                           <styleClass>
+                              <String fx:value="microIcon" />
+                              <String fx:value="book" />
+                           </styleClass>
+                        </StackPane>
+                        <StackPane prefHeight="20.0" prefWidth="20.0">
+                           <styleClass>
+                              <String fx:value="microIcon" />
+                              <String fx:value="carrot" />
+                           </styleClass>
+                        </StackPane>
+                     </children>
+                  </HBox>
+               </top>
+            </BorderPane>
+         </children>
+      </HBox>
+      <Button fx:id="retry" disable="true" layoutX="609.0" layoutY="335.0" mnemonicParsing="false" opacity="0.0" styleClass="retry" text="Retry" AnchorPane.bottomAnchor="360.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="300.0" />
+   </children>
+</AnchorPane>
