@@ -49,7 +49,7 @@ class GameData {
 
 	def loadData(AssetManager assetManager) {
 		for(t : Npc.values) {
-			hitpoints.set(t.ordinal, ImageRaster.create(assetManager.loadTexture('''Textures/«t.name».png''').image))
+			hitpoints.set(t.ordinal, ImageRaster.create(assetManager.loadTexture('''Textures/«t.name»_512.png''').image))
 		}
 	}
 
