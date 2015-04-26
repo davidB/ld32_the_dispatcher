@@ -295,7 +295,7 @@ public class PageInGame extends AppState0 {
 
 		val fpp = new FilterPostProcessor(app.assetManager);
 
-		/* Drop shadows */
+		// Drop shadows
 		val SHADOWMAP_SIZE = 1024;
 //        val dlsr = new DirectionalLightShadowRenderer(assetManager, SHADOWMAP_SIZE, 3);
 //        dlsr.setLight(sun);
@@ -309,6 +309,7 @@ public class PageInGame extends AppState0 {
 //        val ssaoFilter = new SSAOFilter(12.94f, 43.92f, 0.33f, 0.61f);
 //		fpp.addFilter(ssaoFilter);
 		app.viewPort.addProcessor(fpp);
+
 	}
 
 	def makeFloor(Node anchor) {
@@ -316,11 +317,16 @@ public class PageInGame extends AppState0 {
 		// geom.setLocalTranslation(-0.5f * 500.0f, -0.5f * 500.0f, -1.0f)
 		geom.localRotation = new Quaternion().fromAngleAxis(-FastMath.PI / 2, Vector3f.UNIT_X)
 		geom.setLocalTranslation(-0.5f * 500f, -1.1f, 20)
+
 		val mat = new Material(app.assetManager, "Common/MatDefs/Light/Lighting.j3md")
 		mat.setBoolean("UseMaterialColors", true)
-		mat.setBoolean("UseVertexColor", true)
+		//mat.setBoolean("UseVertexColor", true)
 		mat.setColor("Diffuse", new ColorRGBA(249f / 254f, 246 / 254f, 251f / 254f, 1.0f))
 		// mat.setColor("Diffuse", ColorRGBA.White)
+
+		//val mat = new Material(app.assetManager, "Common/MatDefs/Misc/Unshaded.j3md");
+		//mat.setColor("Color", ColorRGBA.Red);
+
 		geom.setMaterial(mat);
 		geom.shadowMode = ShadowMode.Receive
 		// geom.setQueueBucket(Bucket.Transparent);
@@ -355,7 +361,7 @@ public class PageInGame extends AppState0 {
 		geom.setLocalTranslation(-0.5f * 1.0f, -0.5f * 2.0f, 0.0f);
 		val mat = new Material(app.assetManager, "Common/MatDefs/Light/Lighting.j3md")
 		mat.setBoolean("UseMaterialColors", true)
-		mat.setBoolean("UseVertexColor", true)
+		//mat.setBoolean("UseVertexColor", true) //black on macosx if enabled
 		mat.setColor("Diffuse", ColorRGBA.White)
 		mat.setTexture("DiffuseMap", app.assetManager.loadTexture("Textures/" + npc.name + "_512.png"))
 		// mat.getAdditionalRenderState().setBlendMode(RenderState.BlendMode.Additive);
@@ -370,9 +376,9 @@ public class PageInGame extends AppState0 {
 	def makeMark() {
 		val sphere = new Sphere(30, 30, 0.2f);
 		val mark = new Geometry("mark", sphere);
-		val mark_mat = new Material(app.assetManager, "Common/MatDefs/Misc/Unshaded.j3md");
-		mark_mat.setColor("Color", ColorRGBA.Red);
-		mark.setMaterial(mark_mat)
+		val mat = new Material(app.assetManager, "Common/MatDefs/Misc/Unshaded.j3md");
+		mat.setColor("Color", ColorRGBA.Red);
+		mark.setMaterial(mat)
 		mark
 	}
 
