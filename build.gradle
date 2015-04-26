@@ -5,7 +5,7 @@ buildscript {
 	}
 	dependencies {
 		classpath 'com.netflix.nebula:gradle-extra-configurations-plugin:1.12.+'
-		classpath 'net.alchim31.gradle:gradle-getdown-plugin:0.4.1'
+		classpath 'net.alchim31.gradle:gradle-getdown-plugin:0.4.2'
 		classpath 'org.xtend:xtend-gradle-plugin:0.3.4'
 	}
 }
